@@ -1,0 +1,33 @@
+/**Angelica Coria
+ * 8/30/17
+ * 2.7 Scanner Practice
+ * */
+ import java.util.*; //Allows use of Scanner
+    
+    public class ScanKeyboardInt
+{
+    public static void main(String args[])
+    {
+        Scanner keyboard = new Scanner (System.in); //Creates an object that inputs
+        String message;
+        int num1, num2;
+        int sum;
+        
+        //Input and output a Sting
+        System.out.print ("Enter an integer: ");
+        message= keyboard.nextLine();
+        System.out.println ("You entered: \"" + message +"\"");
+        
+        //Input two integers and output a Sum/
+        System.out.print ("Enter an integer: ");
+        num1= keyboard.nextInt(); //Assigns inputted value into a variable
+        
+        System.out.print ("Enter another integer: ");
+        num2 =keyboard.nextInt();
+        
+        sum = num1 + num2;
+        
+        System.out.println(" The sum of " + num1 + " and " + num2 + "is" + sum);
+    }// Ebd main method
+    
+}//End class ScanKeyboardInt
